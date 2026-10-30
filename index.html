@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Altar de Muertos</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:
+    radial-gradient(circle, #572314, #180b08 75%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 35px 10px;
+    font-family: Georgia, serif;
+}
+
+.altar {
+    width: 750px;
+    max-width: 100%;
+    background: #30120e;
+    border: 8px double #e6a53b;
+    box-shadow: 0 0 35px #ff7900;
+    text-align: center;
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Papel picado */
+
+.papel {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.papel span {
+    background: #e52c25;
+    color: #fff;
+    padding: 12px 8px;
+    font-size: 25px;
+    border: 2px dashed #ffdc71;
+    flex: 1;
+}
+
+.papel span:nth-child(2) {
+    background: #138e55;
+}
+.papel span:nth-child(3) {
+    background: #e7a321;
+}
+.papel span:nth-child(4) {
+    background: #8a36a8;
+}
+.papel span:nth-child(5) {
+    background: #167cbb;
+}
+
+/* Arco de flores */
+
+.arco {
+    border: 15px solid #d95b12;
+    border-bottom: none;
+    border-radius: 250px 250px 0 0;
+    width: 75%;
+    margin: auto;
+    padding: 30px 10px 0;
+    box-shadow: 0 0 20px #ff8b00;
+}
+
+.flores {
+    font-size: 30px;
+    line-height: 1.7;
+}
+
+/* Niveles */
+
+.nivel {
+    background: linear-gradient(90deg,#541d13,#963c1c,#541d13);
+    border: 5px solid #e3a53e;
+    border-radius: 8px;
+    margin: 12px auto;
+    padding: 15px;
+    width: 95%;
+    box-shadow: 0 8px 15px #000;
+}
+
+.nivel1 {
+    width: 65%;
+}
+
+.nivel2 {
+    width: 80%;
+}
+
+.nivel3 {
+    width: 95%;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 12px;
+}
+
+.foto {
+    background: #160b08;
+    border: 7px ridge #e8b84d;
+    width: 95px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    box-shadow: 0 0 12px #ffc34d;
+}
+
+.ofrendas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.velas {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 38px;
+    padding: 12px;
+    filter: drop-shadow(0 0 8px orange);
+}
+
+.flores-abajo {
+    font-size: 32px;
+    padding: 10px;
+}
+
+/* Calaveras decorativas */
+
+.calaveras {
+    font-size: 45px;
+    padding: 12px;
+}
+
+/* Mantel */
+
+.mantel {
+    height: 25px;
+    background: repeating-linear-gradient(
+        90deg,
+        #e4a62f,
+        #e4a62f 20px,
+        #c52c22 20px,
+        #c52c22 40px
+    );
+    border: 3px solid #ffcf68;
+}
+
+/* Suelo */
+
+.suelo {
+    font-size: 35px;
+    padding: 15px 0;
+    background: #24100c;
+}
+
+/* Decoración lateral */
+
+.laterales {
+    color: #ffb52e;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding: 5px;
+}
+
+@media(max-width: 500px) {
+    .foto {
+        width: 65px;
+        height: 80px;
+        font-size: 32px;
+    }
+
+    .ofrendas {
+        font-size: 28px;
+    }
+
+    .flores {
+        font-size: 22px;
+    }
+
+    .nivel {
+        padding: 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="altar">
+
+    <div class="papel">
+        <span>✿</span>
+        <span>❀</span>
+        <span>✿</span>
+        <span>❀</span>
+        <span>✿</span>
+    </div>
+
+    <div class="laterales">
+        🌼 🌼 🌼 🌼 🌼
+    </div>
+
+    <!-- Arco de cempasúchil -->
+    <div class="arco">
+        <div class="flores">
+            🌼🌼🌼🌼🌼🌼
+            <br>
+            🌻🌼🌻🌼🌻
+        </div>
+    </div>
+
+    <!-- Primer nivel -->
+    <div class="nivel nivel1">
+
+        <div class="calaveras">
+            💀 🕯️ 💀
+        </div>
+
+        <div class="fotos">
+            <div class="foto">🖼️</div>
+            <div class="foto">📷</div>
+        </div>
+
+        <div class="velas">
+            🕯️ 🕯️ 🕯️
+        </div>
+
+    </div>
+
+    <!-- Segundo nivel -->
+    <div class="nivel nivel2">
+
+        <div class="ofrendas">
+            🌼 💀 🌼 💀 🌼
+        </div>
+
+        <div class="fotos">
+            <div class="foto">🖼️</div>
+            <div class="foto">🖼️</div>
+            <div class="foto">🖼️</div>
+        </div>
+
+        <div class="velas">
+            🕯️ 🕯️ 🕯️ 🕯️
+        </div>
+
+    </div>
+
+    <!-- Tercer nivel -->
+    <div class="nivel nivel3">
+
+        <div class="ofrendas">
+            🍎 🍊 🍇 🍐 🍎
+        </div>
+
+        <div class="ofrendas">
+            🍞 💀 🌼 🍞 💀
+        </div>
+
+        <div class="flores-abajo">
+            🌼🌼🌼🌼🌼🌼🌼🌼
+        </div>
+
+        <div class="velas">
+            🕯️ 🕯️ 🕯️ 🕯️ 🕯️
+        </div>
+
+    </div>
+
+    <div class="mantel"></div>
+
+    <div class="suelo">
+        🌼 🌼 🌼 🌼 🌼 🌼 🌼
+        <br>
+        💀 🏵️ 🕯️ 🏵️ 💀
+    </div>
+
+    <div class="papel">
+        <span>✿</span>
+        <span>❀</span>
+        <span>✿</span>
+        <span>❀</span>
+        <span>✿</span>
+    </div>
+
+</div>
+
+</body>
+</html>
